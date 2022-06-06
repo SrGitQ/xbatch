@@ -1,7 +1,10 @@
+import Userconf from "./components/Userconf"
+import ScreenView from "./components/ScreenView"
 function App() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">xBatch</h1>
+    <div className="bg-scray flex h-screen">
+      <Userconf/>
+      <ScreenView/>
     </div>
   );
 }
