@@ -3,10 +3,28 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const mongoose = require('mongoose');
 
 var app = express();
 
+const user = "root";
+const pass = "0culITnwd4VdRO5G"
+const cluster = "jimbo.7d4eq"
+const dbn = "scale"
 
+mongoose.connect(
+  `mongodb+srv://${user}:${pass}@${cluster}.mongodb.net/${dbn}?retryWrites=true&w=majority`,
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+  }
+)
+
+const db = mongoose.connection;
+db.on("error", console.error.bind(console, "connection error: "));
+db.once("open", () => {
+  console.log("Database connection successfully!");
+})
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -22,10 +40,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var pagesRouter = require('./routes/pages');
 //routes
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/pages', pagesRouter);
 
 
 
