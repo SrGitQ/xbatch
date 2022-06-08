@@ -1,17 +1,20 @@
 import UserInf from "../components/UserInf"
 import BoxBody from "../atoms/BoxBody"
+import Menu from "../components/Menu"
+import Divisor from "../atoms/Divisor"
 
-const MenuScreen = () => {
+const MenuScreen = ({option, setOption}) => {
     const layout = (
-        <div className="grid grid-cols-1 divide-y divide-bray mx-4">
+        <div >
             <UserInf/>
-            <div>22</div>
+            <Divisor />
+            <Menu option={option} setOption={setOption}/>
         </div>
     )
 
     return (
-        <BoxBody layout={layout} width='72'/>
+        <BoxBody layout={layout} width='w-72'/>
     ) 
 }
 
-export default MenuScreen; 
+export default MenuScreen;

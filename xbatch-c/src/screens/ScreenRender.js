@@ -1,9 +1,9 @@
 import BoxBody from "../atoms/BoxBody";
 
-const ScreenRender = () => {
-    const layout = (<div>Screen View</div>)
+const ScreenRender = ({option}) => {
+    const layout = (<div>Screen {option}</div>)
     return (
-        <BoxBody layout={layout} width='full'/>
+        <BoxBody layout={layout} width='w-full'/>
     ) 
 }
 

@@ -1,5 +1,6 @@
 import Text from '../atoms/Text'
 import Logo from '../atoms/Logo'
+
 const Description = () => {
     return (
         <div className='text-center mx-auto'>
@@ -11,7 +12,7 @@ const Description = () => {
 }
 const UserInf = () => {
     return (
-        <div className="h-80 flex flex-col justify-center">
+        <div className="h-72 flex flex-col justify-center">
             <Logo name = "EMM"/>
             <br/>
             <Description/>

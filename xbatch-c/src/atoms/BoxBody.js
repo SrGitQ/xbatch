@@ -1,5 +1,5 @@
-const BoxBody = ({layout, width='full'}) => {
-    const style = 'bg-prayrise w-' + width + ' rounded-lg'
+const BoxBody = ({width, layout='w-full'}) => {
+    const style = 'bg-prayrise rounded-lg ' + width
     return (
         <div className={style}>{layout}</div>
     ) 
