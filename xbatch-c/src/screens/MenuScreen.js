@@ -1,5 +1,5 @@
 import UserInf from "../components/UserInf"
-import BoxBody from "../components/BoxBody"
+import BoxBody from "../atoms/BoxBody"
 
 const MenuScreen = () => {
     const layout = (

@@ -1,4 +1,4 @@
-import BoxBody from "../components/BoxBody";
+import BoxBody from "../atoms/BoxBody";
 
 const ScreenRender = () => {
     const layout = (<div>Screen View</div>)

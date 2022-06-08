@@ -1,5 +1,5 @@
-import Text from './Text'
-import Logo from './Logo'
+import Text from '../atoms/Text'
+import Logo from '../atoms/Logo'
 const Description = () => {
     return (
         <div className='text-center mx-auto'>
