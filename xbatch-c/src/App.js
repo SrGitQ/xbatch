@@ -1,10 +1,14 @@
-import Userconf from "./components/Userconf"
-import ScreenView from "./components/ScreenView"
+import UserConf from "./screens/UserConf"
+import ScreenView from "./screens/ScreenView"
+
 function App() {
   return (
-    <div className="bg-scray flex h-screen">
-      <Userconf/>
-      <ScreenView/>
+    <div className="bg-pray flex h-screen">
+      <div className="h-auto w-full m-5 flex">
+        <UserConf />
+        <div className="w-5"/>
+        <ScreenView />
+      </div>
     </div>
   );
 }
