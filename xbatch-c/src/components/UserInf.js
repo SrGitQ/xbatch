@@ -1,19 +1,19 @@
-const Logo = (props) => {
-    return (<div className="bg-bluegray rounded-full w-32 h-32 mx-auto flex">
-        <p className="text-text text-center mx-auto font-bold m-auto">{props.name}</p>
-    </div>)
-}
+import Text from './Text'
+import Logo from './Logo'
 const Description = () => {
-    return <p className="text-text text-center mx-auto">
-        Efrack 
-        <br/>
-        Parser Engineer 
-    </p>
+    return (
+        <div className='text-center mx-auto'>
+            <Text text="Efrack"/>
+            <Text text="Parser Engineer "/>
+        </div>
+    )
+    
 }
 const UserInf = () => {
     return (
         <div className="h-80 flex flex-col justify-center">
             <Logo name = "EMM"/>
+            <br/>
             <Description/>
         </div>
     ) 

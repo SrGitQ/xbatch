@@ -1,6 +1,6 @@
 const Text = ({text}) => {
     return (
-        <p className="text-grayrise">{text}</p>
+        <p className="text-grayrise text-sm">{text}</p>
     )
 }
 

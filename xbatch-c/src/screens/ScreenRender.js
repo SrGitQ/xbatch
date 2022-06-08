@@ -1,10 +1,10 @@
 import BoxBody from "../components/BoxBody";
 
-const ScreenView = () => {
+const ScreenRender = () => {
     const layout = (<div>Screen View</div>)
     return (
         <BoxBody layout={layout} width='full'/>
     ) 
 }
 
-export default ScreenView; 
+export default ScreenRender; 
