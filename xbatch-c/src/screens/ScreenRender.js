@@ -1,7 +1,7 @@
 import BoxBody from "../atoms/BoxBody";
-import PagesScreen from "../components/PagesScreen";
-import DashScreen from "../components/DashScreen";
-import StatsScreen from "../components/StatsScreen"
+import PagesScreen from "../layouts/pages_screen/PagesScreen";
+import DashScreen from "../layouts/dash_screen/DashScreen";
+import StatsScreen from "../layouts/stats_screen/StatsScreen";
 
 const ScreenRender = ({option}) => {
     return (

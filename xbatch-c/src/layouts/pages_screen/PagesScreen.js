@@ -1,3 +1,4 @@
+import { BodyPageScreen } from './BodyPageScreen';
 
 const Header = () => {
     return (
@@ -24,20 +25,12 @@ const AuxHeader = () => {
     );
 }
 
-const Body = () => {
-    return (
-        <div className="w-full h-full bg-gray-400">
-            awd
-        </div>
-    );
-}
-
 const PagesScreen = () => {
     return (
-        <div className="m-4 flex flex-col h-[96%] w-[98%]">
+        <div className="h-[93vh] m-4">
             <Header />
             <AuxHeader />
-            <Body />
+            <div className='row-span-auto'><BodyPageScreen /></div>
         </div>
     );
 }
