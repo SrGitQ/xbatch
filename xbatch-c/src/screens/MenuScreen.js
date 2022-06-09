@@ -3,10 +3,10 @@ import BoxBody from "../atoms/BoxBody"
 import Menu from "../components/Menu"
 import Divisor from "../atoms/Divisor"
 
-const MenuScreen = ({option, setOption}) => {
+const MenuScreen = ({option, setOption, userInfo}) => {
     const layout = (
         <div >
-            <UserInf/>
+            <UserInf userInfo={userInfo}/>
             <Divisor />
             <Menu option={option} setOption={setOption}/>
         </div>

@@ -16,8 +16,8 @@ const Option = ({title, checked = false, select, setOption}) => {
 const Menu = ({option, setOption}) => {
     return (
         <div className="h-56 my-10 ">
-            <Option title="Dashboard" select={'dashboard'} setOption={setOption} checked={option === 'dashboard'}/>
             <Option title="Pages" select={'pages'} setOption={setOption} checked={option === 'pages'}/>
+            <Option title="Dashboard" select={'dashboard'} setOption={setOption} checked={option === 'dashboard'}/>
             <Option title="Statistics" select={'statistics'} setOption={setOption} checked={option === 'statistics'}/>
         </div>
     );
