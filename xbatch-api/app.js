@@ -8,7 +8,7 @@ const mongoose = require('mongoose');
 var app = express();
 
 const user = "root";
-const pass = "0culITnwd4VdRO5G"
+const pass = ""
 const cluster = "jimbo.7d4eq"
 const dbn = "scale"
 
